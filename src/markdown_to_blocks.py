@@ -3,7 +3,6 @@ def markdown_to_blocks(markdown):
     blocks = clean_markdown.split("\n\n")
     cleaned_blocks = []
     for block in blocks:
-        print(block)
         lines = block.split('\n')
         stripped_lines = [line.strip() for line in lines]
         cleaned_block = '\n'.join(stripped_lines)
