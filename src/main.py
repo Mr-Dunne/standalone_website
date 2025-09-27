@@ -11,9 +11,9 @@ def main():
     else:
         basepath = "/"
     
-    copy_directory_contents(f"static", "public")
+    copy_directory_contents(f"static", "docs")
 
-    generate_pages_recursive(f"content", "template.html", "public", basepath)
+    generate_pages_recursive(f"content", "template.html", "docs", basepath)
 
 if __name__ == "__main__":
     main()
